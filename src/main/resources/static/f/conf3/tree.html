@@ -1,0 +1,7 @@
+<div class="w3-row w3-border-top">
+    <div class="w3-half" data-ng-repeat="lr in ['l','r']" data-ng-class="{'w3-border-left w3-container':1==$index}">
+        <div data-ng-repeat="id in cr.pl.singlePage.session.tree[lr].id" data-ng-include="'mc_lr_part03.html'"
+            data-ng-init="sqlName = cr.pl.conf.readTypeForChildren_fn.seekById(id)[0] || 'SelectADN'"></div>
+        <span data-ng-if="'r'==lr">→</span>
+    </div>
+</div>

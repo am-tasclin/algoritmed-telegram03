@@ -1,0 +1,14 @@
+<div class="w3-row w3-border-top">
+    <div class="w3-half" data-ng-repeat="lr in ['l','r']" data-ng-class="{'w3-border-left w3-container':1==$index}">
+        <div data-ng-repeat="id in ctrl.singlePage.session.tree[lr].id">
+            <!--
+                <div data-ng-repeat="listName in [ctrl.getSql('confTelegram').parentIdToDocType[id]]"
+            -->
+            <div data-ng-repeat="listName in ctrl.singlePage.session.tree[lr].openIds[id]"
+                data-ng-init="listNameP=ctrl.getSql('confTelegram').parentIdToDocType[id]"
+                data-ng-include="'mc_lr_part01.html'">
+            </div>
+        </div>
+        <span data-ng-if="1==$index"> ➤ </span>
+    </div>
+</div>

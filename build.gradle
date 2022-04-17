@@ -1,0 +1,44 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'org.algoritmed'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.telegram:telegrambots-spring-boot-starter:5.7.1'
+	implementation 'org.openjdk.nashorn:nashorn-core:15.3'
+	//implementation 'com.google.code.scriptengines:scriptengines-javascript:1.1.1'
+	implementation 'org.mozilla:rhino:1.7.14'
+
+	runtimeOnly 'org.postgresql:postgresql'
+	implementation 'com.h2database:h2'
+	//runtimeOnly 'com.h2database:h2:2.1.210'
+
+	runtimeOnly 'org.webjars.npm:angular:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-animate:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-resource:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-route:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-sanitize:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-aria:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-i18n:1.8.2'
+	runtimeOnly 'org.webjars.npm:angular-messages:1.8.2'
+	runtimeOnly 'org.webjars:font-awesome:6.1.0'
+
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
