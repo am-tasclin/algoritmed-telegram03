@@ -1,8 +1,0 @@
-<div>
-    <div> <span class="w3-small am-b">Пацієнт:</span>
-        {{ctrl.conf.patient_family_name.d.list[0].name_v}},
-        {{ctrl.conf.patient_family_name.d.list[0].family_v}} </div>
-    <div data-ng-repeat="eoc in ctrl.conf.episode_telegram.d.list">
-        <span class="w3-small"> {{eoc.ts | date : 'mediumDate'}}, {{eoc.ts | date : 'shortTime'}} </span>
-    </div>
-</div>
