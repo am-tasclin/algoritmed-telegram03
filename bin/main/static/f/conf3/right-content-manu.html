@@ -1,0 +1,21 @@
+<span class="w3-dropdown-hover w3-hover-shadow w3-white">
+    &nbsp;☰&nbsp;
+    <div style="right: -4px; min-width: 275px;" x="w3-left w3-rightbar w3-right-align w3-container"
+        class="w3-dropdown-content w3-card-4 w3-rightbar">
+        a2
+        {{conf.readTypeForChildren_fn.seekById(id)}}
+        <div class="w3-hover-shadow" data-ng-click="cr.pl.nodeIdMenu.setSubMenu1('sqlName')">
+            <i class="fa-regular fa-note-sticky"></i>
+            Зчитування вкладених даних
+            <i class="fa-solid fa-caret-down"></i>
+            <div class="w3-dropdown-content w3-card-4 w13-container w3-leftbar"
+                data-ng-if="cr.pl.nodeIdMenu.subMenu=='sqlName'">
+                a23
+                {{cr.pl.conf.readTypeForChildren_fn.seekById(id)}}
+                <div data-ng-repeat="sqlName in cr.pl.conf.seekReadTypeForChildren(id)">
+                    {{sqlName}}
+                </div>
+            </div>
+        </div>
+    </div>
+</span>

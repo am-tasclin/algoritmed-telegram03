@@ -1,0 +1,23 @@
+.am-n {font-weight: normal;}
+.am-b {font-weight: bold;}
+.am-i {font-style: italic; }
+.am-u {text-decoration: underline; }
+a.am-0u {text-decoration: none; }
+.am-uppercase{text-transform: uppercase;}
+.am-width-100pr{width: 100%;}
+.am-max-width-1{max-width: 70em;}
+
+@media print {
+	@page {
+		size: A4; 
+		/* DIN A4 standard, Europe 
+		margin: 0;
+		*/
+		margin-right: 0;
+		margin-left: 2em;
+	}
+	.am-no-print, .am-no-print * {
+		display: none !important;
+	}
+	.am-inner-scroll * {margin-right: 0;}
+}

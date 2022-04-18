@@ -1,0 +1,29 @@
+<div class="w3-border-bottom">
+    <div class="w3-container w3-dropdown-hover w3-white">
+        <span class="w3-small am-b w3-hover-shadow" title="{{listName}}"> ☰ {{ctrl.conf[listName].name}} </span>
+        <div class="w3-dropdown-content w3-card">
+            <div data-ng-repeat="n in ctrl.conf.objList" class="w3-hover-shadow"
+                data-ng-class="{'w3-green':ctrl.session.mc[lr].listName==n}"
+                data-ng-click="ctrl.session.mc[lr].listName=n">
+                {{ctrl.conf[n].name}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3-container" data-ng-class="{'w3-container':'r'==rl}">
+    <table>
+        <tr data-ng-repeat-start="r in ctrl.conf[listName].d.list" class="w3-hover-shadow"
+            data-ng-class="{'w3-green':ctrl.session.mc[lr].selectedId[listName]==r.row_id}"
+            data-ng-click="ctrl.openSubData(lr, r.row_id, listName)">
+            <td class="w3-tiny"> {{r[ctrl.conf[listName].colList[0]]}} </td>
+            <td> {{r[ctrl.conf[listName].colList[1]]}} </td>
+        </tr>
+        <tr data-ng-repeat-end data-ng-if="ctrl.session.mc[lr].selectedId[listName]==r.row_id">
+            <td colspan="2">
+                <div data-ng-repeat="listName in ctrl.conf[ctrl.session.mc[lr].listName].subDataList"
+                    data-ng-include="'listTable.html'">
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
