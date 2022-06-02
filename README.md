@@ -22,8 +22,8 @@ Telegram chat-bot
 > Версія Java дивись build.gradle файл, актуальна 11 .
 > 
 > Варіанти запуску мікросервісу 
->> Напряму  gradle bootRun
+>> Напряму: > gradle bootRun
 >> 
->> Через створення окремого скомпільованого пакунку, jar файл: gradle clean build
+>> Через створення окремого скомпільованого пакунку, jar файл: > gradle clean build
 
 
