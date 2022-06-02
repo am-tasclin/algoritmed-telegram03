@@ -14,6 +14,7 @@ Algoritmed telegram chat-bot with FHIR-WorkFlow logic. Project "я з тобою
 Telegram chat-bot
 
 > дивись офіційну інструкцію реєстрації чат-бот телеграм
+> Використання username та token дивись файл шаблоном конфігурації application copy.properties
 
 
 Для розгортання необхідно Java, git, gradle
