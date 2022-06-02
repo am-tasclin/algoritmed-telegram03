@@ -23,6 +23,7 @@ Telegram chat-bot
 > 
 > Варіанти запуску мікросервісу 
 >> Напряму  gradle bootRun
+>> 
 >> Через створення окремого скомпільованого пакунку, jar файл: gradle clean build
 
 
