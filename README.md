@@ -7,7 +7,9 @@ Algoritmed telegram chat-bot with FHIR-WorkFlow logic. Project "я з тобою
 
 > http://algoritmed.com/db/mis001pg/
 > Postgres
+> 
 > Налаштування мікросервісу : створити application.properties, користуючись шаблоном application copy.properties
+> 
 > Налаштувати datasource 
 > spring.datasource.url=jdbc:postgresql://localhost/mis001pg
 
