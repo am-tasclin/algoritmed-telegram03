@@ -20,6 +20,7 @@ Telegram chat-bot
 Для розгортання необхідно Java, git, gradle
 
 > Версія Java дивись build.gradle файл, актуальна 11 .
+> 
 > Варіанти запуску мікросервісу 
 >> Напряму  gradle bootRun
 >> Через створення окремого скомпільованого пакунку, jar файл: gradle clean build
