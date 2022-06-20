@@ -1,5 +1,7 @@
 # algoritmed-telegram03
-Algoritmed telegram chat-bot with FHIR-WorkFlow logic. Project "я з тобою".
+Algoritmed telegram chat-bot with FHIR-WorkFlow logic. 
+
+Project "я з тобою" - з'єднування, пацієнта, психотерапевта, кращої лікарської практики, телекомунікаційними засобами разом, особливо під час війни.
 
 ## Інсталяція
 
