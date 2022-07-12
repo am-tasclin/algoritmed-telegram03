@@ -31,3 +31,10 @@ Telegram chat-bot
 >> Через створення окремого скомпільованого пакунку, jar файл: > gradle clean build
 
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
